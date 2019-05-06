@@ -1,0 +1,22 @@
+<mat-toolbar color = "primary">
+	<!-- <span class = "gap">File</span> -->
+	<!-- <a routerLink="/main"><span>CompanyName</span><img src="favicon.ico" alt=""></a> -->
+	<img routerLink="/main" src="favicon.ico" alt="">
+	<span routerLink="/main">CompanyName</span>
+	<span class = "filler"></span>
+
+	<button mat-button [matMenuTriggerFor] = "menu">Services</button>
+	<button mat-button [matMenuTriggerFor] = "menu">Clients</button>
+	<button mat-button [matMenuTriggerFor] = "menu">About</button>
+	<button mat-button [matMenuTriggerFor] = "menu">Blog</button>
+	<button mat-button [matMenuTriggerFor] = "menu">Contact Us</button>
+
+	<mat-menu #menu="matMenu">
+		<button mat-menu-item>Mobile Development</button>
+		<button mat-menu-item>Web Development</button>
+		<button mat-menu-item>CRM Solutions</button>
+		<button mat-menu-item>Cloud Solutions</button>
+		<button mat-menu-item>eCommerce Solutions</button>
+	</mat-menu>
+
+</mat-toolbar>
